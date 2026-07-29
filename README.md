@@ -1,2 +1,2 @@
-# Poyecto-GathSession
-Proyecto de Online Forum - GathSession
+# Proyecto-GathSession
+Proyecto de un Online Forum - GathSession
