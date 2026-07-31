@@ -1,0 +1,12 @@
+@use "../abstracts" as abs;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: abs.$bg-color;
+}
