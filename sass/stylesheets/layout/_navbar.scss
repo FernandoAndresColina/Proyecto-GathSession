@@ -1,0 +1,29 @@
+@use "../abstracts" as abs;
+
+.nav-primary {
+  ul {
+    @include abs.reset-list();
+    gap: 48px;
+    margin-right: 200px;
+    a {
+      color: abs.$white-opacity-color;
+      text-decoration: none;
+      position: relative;
+      &.active {
+        color: white;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -8px;
+          width: 50%;
+          height: 2px;
+          background-color: abs.$button-color;
+        }
+      }
+      &:hover {
+        color: abs.$button-color;
+      }
+    }
+  }
+}

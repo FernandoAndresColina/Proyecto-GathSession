@@ -1,0 +1,9 @@
+@use "../abstracts" as abs;
+
+.hero {
+  &-content {
+    h1 {
+      color: white;
+    }
+  }
+}

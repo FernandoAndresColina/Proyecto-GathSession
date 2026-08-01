@@ -22,6 +22,36 @@ header {
   align-items: center;
 }
 
+.nav-primary ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-right: 200px;
+}
+.nav-primary ul a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  position: relative;
+}
+.nav-primary ul a.active {
+  color: white;
+  position: relative;
+}
+.nav-primary ul a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 50%;
+  height: 2px;
+  background-color: #db2a6b;
+}
+.nav-primary ul a:hover {
+  color: #db2a6b;
+}
+
 html,
 body {
   margin: 0;
@@ -31,6 +61,10 @@ body {
 
 body {
   background-color: #2b2d38;
+}
+
+.hero-content h1 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
