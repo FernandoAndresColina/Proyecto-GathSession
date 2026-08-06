@@ -1,3 +1,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+@use "../abstracts" as abs;
+
+.hero {
+  &-button {
+    margin-bottom: 150px;
+    .btn {
+      &-primary {
+        @include abs.button();
+        margin-right: 20px;
+      }
+      &-secondary {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 300;
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
