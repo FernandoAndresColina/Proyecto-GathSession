@@ -6,7 +6,7 @@
 
 .hero {
   &-button {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     .btn {
       &-primary {
         @include abs.button();

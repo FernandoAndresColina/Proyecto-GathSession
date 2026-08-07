@@ -48,6 +48,28 @@
       }
     }
   }
+  .hero-right-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-lines {
+    position: absolute;
+    top: -43px;
+    left: -60px;
+    right: -60px;
+    bottom: -60px;
+    background-image: url("../img/bg-lines.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: center;
+
+    pointer-events: none;
+    z-index: 0;
+  }
   &-images-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,8 +78,9 @@
     position: relative;
     width: 100%;
     max-width: 600px;
+
     .img-card {
-      border-radius: 100px;
+      border-radius: 70px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
@@ -69,28 +92,32 @@
     }
     .person-1 {
       grid-column: 1 / 2;
-      grid-row: 1 / 3;
+      grid-row: 1 / 4;
       background-color: abs.$person1-color;
     }
     .person-2 {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
+      height: 150%;
+      margin-bottom: 200px;
       background-color: abs.$person2-color;
     }
     .person-3 {
       grid-column: 2 / 3;
-      grid-row: 2 / 4;
+      grid-row: 2 / 6;
       background-color: abs.$person3-color;
+      margin-top: 60px;
+      height: 87%;
     }
     .person-4 {
       grid-column: 1 / 2;
-      grid-row: 3 / 5;
+      grid-row: 4 / 5;
       background-color: abs.$person4-color;
+      height: 150%;
     }
     .person-5 {
       grid-column: 3 / 4;
       grid-row: 1 / 4;
-      border-radius: 150px;
       background-color: abs.$person5-color;
       transform: translateY(40px);
     }
