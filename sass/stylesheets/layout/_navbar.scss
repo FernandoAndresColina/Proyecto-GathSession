@@ -3,26 +3,52 @@
 .nav-primary {
   ul {
     @include abs.reset-list();
-    gap: 48px;
-    margin-right: 150px;
+    gap: 35px;
+    margin-right: 180px;
     a {
       color: abs.$white-opacity-color;
       text-decoration: none;
       position: relative;
-      &.active {
+      font-size: 16px;
+      &.active1 {
         color: white;
         position: relative;
+        &:hover {
+          color: abs.$person4-color;
+        }
         &::before {
           content: "";
           position: absolute;
           bottom: -8px;
           width: 50%;
           height: 2px;
+          border-radius: 30px;
+          margin-left: 1px;
           background-color: abs.$button-color;
         }
       }
       &:hover {
         color: abs.$button-color;
+      }
+      &.active2 {
+        &:hover {
+          color: abs.$person1-color;
+        }
+      }
+      &.active3 {
+        &:hover {
+          color: abs.$person3-color;
+        }
+      }
+      &.active4 {
+        &:hover {
+          color: abs.$person2-color;
+        }
+      }
+      &.active5 {
+        &:hover {
+          color: abs.$person5-color;
+        }
       }
     }
   }

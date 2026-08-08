@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   margin-top: 30px;
 }
 header .header-logo img {
@@ -33,28 +33,46 @@ header .header-logo img {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 48px;
-  margin-right: 150px;
+  gap: 35px;
+  margin-right: 180px;
 }
 .nav-primary ul a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   position: relative;
+  font-size: 16px;
 }
-.nav-primary ul a.active {
+.nav-primary ul a.active1 {
   color: white;
   position: relative;
 }
-.nav-primary ul a.active::before {
+.nav-primary ul a.active1:hover {
+  color: #ff006e;
+}
+.nav-primary ul a.active1::before {
   content: "";
   position: absolute;
   bottom: -8px;
   width: 50%;
   height: 2px;
+  border-radius: 30px;
+  margin-left: 1px;
   background-color: #db2a6b;
 }
 .nav-primary ul a:hover {
   color: #db2a6b;
+}
+.nav-primary ul a.active2:hover {
+  color: #6e1fed;
+}
+.nav-primary ul a.active3:hover {
+  color: #ff7e29;
+}
+.nav-primary ul a.active4:hover {
+  color: #60d3d9;
+}
+.nav-primary ul a.active5:hover {
+  color: #f4b840;
 }
 
 html,
@@ -70,7 +88,7 @@ body {
 }
 
 .hero-button {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .hero-button .btn-primary {
   display: inline-block;
@@ -85,12 +103,18 @@ body {
   text-decoration: none;
   margin-right: 20px;
 }
+.hero-button .btn-primary:hover {
+  background-color: #bc265d;
+}
 .hero-button .btn-secondary {
   color: white;
   display: inline-flex;
   align-items: center;
   font-size: 14px;
   font-weight: 300;
+}
+.hero-button .btn-secondary:hover {
+  color: #db2a6b;
 }
 .hero-button .btn-secondary img {
   width: 30px;
@@ -102,6 +126,7 @@ body {
 }
 .hero-content h1 {
   margin-bottom: 20px;
+  margin-top: 15px;
   color: white;
   font-size: 65px;
   font-weight: 700;
@@ -110,11 +135,12 @@ body {
 }
 .hero-content p {
   color: rgba(255, 255, 255, 0.5);
-  max-width: 70%;
+  max-width: 75%;
   font-size: 20px;
   font-weight: 300;
   line-height: 2rem;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
 }
 .hero-tools ul {
   padding: 0;
@@ -135,6 +161,9 @@ body {
   font-weight: 500;
   line-height: 18px;
 }
+.hero-tools ul li a:hover {
+  color: #db2a6b;
+}
 .hero-tools ul li a img {
   padding: 8px;
   border-radius: 30%;
@@ -153,8 +182,8 @@ body {
   position: absolute;
   top: -43px;
   left: -60px;
-  right: -60px;
-  bottom: -60px;
+  right: -150px;
+  bottom: -176px;
   background-image: url("../img/bg-lines.svg");
   background-repeat: no-repeat;
   background-size: 800px;
@@ -170,6 +199,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 600px;
+  margin-right: 100px;
 }
 .hero-images-grid .img-card {
   border-radius: 70px;

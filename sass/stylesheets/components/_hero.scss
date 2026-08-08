@@ -7,6 +7,7 @@
   &-content {
     h1 {
       margin-bottom: 20px;
+      margin-top: 15px;
       color: white;
       font-size: 65px;
       font-weight: 700;
@@ -15,11 +16,12 @@
     }
     p {
       color: abs.$white-opacity-color;
-      max-width: 70%;
+      max-width: 75%;
       font-size: 20px;
       font-weight: 300;
       line-height: 2rem;
       font-family: abs.$primary-font;
+      margin-bottom: 30px;
     }
   }
   &-tools {
@@ -37,6 +39,9 @@
           font-size: 16px;
           font-weight: 500;
           line-height: 18px;
+          &:hover {
+            color: abs.$button-color;
+          }
           img {
             padding: 8px;
             border-radius: 30%;
@@ -60,8 +65,8 @@
     position: absolute;
     top: -43px;
     left: -60px;
-    right: -60px;
-    bottom: -60px;
+    right: -150px;
+    bottom: -176px;
     background-image: url("../img/bg-lines.svg");
     background-repeat: no-repeat;
     background-size: 800px;
@@ -78,6 +83,7 @@
     position: relative;
     width: 100%;
     max-width: 600px;
+    margin-right: 100px;
 
     .img-card {
       border-radius: 70px;
